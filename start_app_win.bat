@@ -5,8 +5,8 @@ docker build -t kassera/project-database:1.0 database/.
 
 echo "Realizando Push..."
 
-docker push kassera/project-backend:1.2
-docker push kassera/project-database:1.2
+docker push kassera/project-backend:1.0
+docker push kassera/project-database:1.0
 
 echo "Criando Volume Persistente..."
 
