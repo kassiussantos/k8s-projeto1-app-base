@@ -12,7 +12,7 @@ spec:
         app: mysql
     spec:
       containers:
-      - image: kassera/project-database:1.o
+      - image: kassera/project-database:1.0
         args:
         - "--ignore-db-dir=lost+found"
         imagePullPolicy: Always
@@ -49,7 +49,7 @@ spec:
     spec:
       containers:
       - name: php
-        image: kassera/project-backend:1.o
+        image: kassera/project-backend:1.0
         imagePullPolicy: Always 
         ports:
         - containerPort: 80
