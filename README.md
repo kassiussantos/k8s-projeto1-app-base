@@ -18,4 +18,4 @@ Conhecimentos Intermediarios em Linux, Docker, Kubernetes, GCP
 
 ## Extras
 
-Criado um script basico para remoção ``delete_all.bat`` de todos os serviços criados para agilizar a reutilização em caso de mais laboratorios com a mesma infraestrutura.
+Criado um script basico ``delete_all.bat`` para remoção de todos os serviços criados para agilizar a reutilização em caso de mais laboratorios com a mesma infraestrutura.

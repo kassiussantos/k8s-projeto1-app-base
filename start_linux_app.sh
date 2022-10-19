@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Criando Imagens..."
 
 docker build -t kassera/project-backend:1.0 backend/.
@@ -20,16 +22,16 @@ echo "Criando Deployments..."
 
 kubectl apply -f ./deployment.yml
 
-cls
+clear
 
-echo "Listando Services"
+echo "Listando Services..."
 
-Start-Sleep -s 8
+sleep 8
 
 kubectl get services
 
-echo "Listando Pods"
+echo "Listando Pods..."
 
-Start-Sleep -s 8
+sleep 8
 
 kubectl get pods -o wide

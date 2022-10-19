@@ -1,37 +1,37 @@
-#!/bin/bash
+@echo off
 
-echo "Criando Imagens..."
+echo Criando Imagens...
 
 docker build -t kassera/project-backend:1.0 backend/.
 docker build -t kassera/project-database:1.0 database/.
 
-echo "Realizando Push..."
+echo Realizando Push...
 
 docker push kassera/project-backend:1.0
 docker push kassera/project-database:1.0
 
-echo "Criando Volume Persistente..."
+echo Criando Volume Persistente...
 
 kubectl apply -f ./pvc-data.yml
 
-echo "Criando Servicos no Cluster Kubernetes..."
+echo Criando Servicos no Cluster Kubernetes...
 
 kubectl apply -f ./services.yml
 
-echo "Criando Deployments..."
+echo Criando Deployments...
 
 kubectl apply -f ./deployment.yml
 
-clear
+cls
 
-echo "Listando Services"
+echo Listando Services...
 
-sleep 8
+timeout 10 > NUL
 
 kubectl get services
 
-echo "Listando Pods"
+echo Listando Pods...
 
-sleep 8
+timeout 8 > NUL
 
 kubectl get pods -o wide
