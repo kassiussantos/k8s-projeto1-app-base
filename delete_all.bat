@@ -12,7 +12,7 @@ kubectl delete --all pods
 echo "Delete All PVC"
 kubectl patch pvc mysql-dados -p '{"metadata":{"finalizers":null}}'
 
-kubectl delete pvc --grace-period=0 --force mysql-dados
+kubectl delete pvc --grace-period=0 --force mysql-data
 
 cls
 
@@ -23,3 +23,5 @@ kubectl get nodes
 kubectl get pods
 
 kubectl get pvc
+
+echo "It's done!"

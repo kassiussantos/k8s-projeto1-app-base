@@ -2,9 +2,9 @@
 $servername = "mysql-connection";
 $username = "root";
 $password = "Senha123";
-$database = "meubanco";
+$database = "mybank";
 
-// Criar conexão
+// Create connection
 
 $link = new mysqli($servername, $username, $password, $database);
 

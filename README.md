@@ -1,3 +1,5 @@
+_em português_
+
 # Atividade Bootcamp dio.me
 
 Cloud DevOps Experience - Banco Carrefour
@@ -19,3 +21,28 @@ Conhecimentos Intermediarios em Linux, Docker, Kubernetes, GCP
 ## Extras
 
 Criado um script basico ``delete_all.bat`` para remoção de todos os serviços criados para agilizar a reutilização em caso de mais laboratorios com a mesma infraestrutura.
+
+-------------------------------------------------------------------------------------
+_in English_
+
+# dio.me Bootcamp Activity
+
+Cloud DevOps Experience - Carrefour Bank
+
+Creating an Application Deployment
+
+## **Description**
+
+In this project we will deploy a complete application with frontend, backend and mysql database. In the development of the project the container images and services needed in kubernetes will be created so that the application is ready for production.
+
+The architecture can be summarized in a frontend isolated from the K8S Cluster simulating an application installed on external devices such as mobile. We will have a Loadbalancer that will connect to the php backend and connect to the mysql database.
+Will be created 6 php replicas (PODs) divided into 3 Nodes.
+Mysql Database will use only one POD without replicas, but we will have data persistence (PVC) Google Cloud Platform.
+
+## Prerequisites ##
+
+Intermediate knowledge in Linux, Docker, Kubernetes, GCP
+
+## Extras
+
+Created a basic script ``delete_all.bat`` to remove all services created to speed up the reuse in case of more labs with the same infrastructure.
